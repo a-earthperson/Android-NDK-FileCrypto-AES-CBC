@@ -3,7 +3,7 @@
 # July 2016
 
 CC = gcc
-CFLAGS = -O3 -Wall -Wextra -Wno-unused -Werror
+CFLAGS = -O2 -DHAVE_AES -Wall -Wextra -Wno-unused -Werror
 LDLIBS = -lm
 
 DISTDIR = Android-NDK-FileCrypto-AES-CBC
