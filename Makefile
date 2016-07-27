@@ -13,7 +13,7 @@ all: encrypt
 SRC = openssl/aes_core.c openssl/aes_cbc.c openssl/cbc128.c encrypt.c
 OBJ = $(subst .c,.o,$(SRC))
 
-DIST_SOURCES = Makefile README.md openssl/ encrypt.c LICENSE
+DIST_SOURCES = Makefile README.md openssl/ zlib/ encrypt.c encrypt.h LICENSE
 
 encrypt: $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $(OBJ) $(LDLIBS)
