@@ -1,10 +1,10 @@
 # Android-NDK-FileCrypto-AES-CBC
 # Arjun Arjun
 # July 2016
-
+#arm-linux-gnueabi-gcc -static -march=armv7-a
 CC = gcc
-CFLAGS = -O2 -DHAVE_AES -Wall -Wextra -Wno-unused -Werror
-LDLIBS = -lm
+CFLAGS = -Ofast -DHAVE_AES -Wall -Wextra -Wno-unused -Werror
+LDLIBS = -lz
 
 DISTDIR = Android-NDK-FileCrypto-AES-CBC
 
