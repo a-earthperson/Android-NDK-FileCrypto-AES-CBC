@@ -18,6 +18,10 @@ int main(int argc, char const *argv[])
 
         const char *infile_name  = argv[1];
         int fd = open (argv[1], O_RDONLY);
+
+        if(fd < 0)
+          return -1;
+          
         argc = 0;
 
         /* Get the size of the file. */

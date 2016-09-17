@@ -4,7 +4,7 @@
 #arm-linux-gnueabi-gcc -static -march=armv7-a
 CC = gcc
 CFLAGS = -Ofast -DHAVE_AES -Wall -Wextra -Wno-unused -Werror
-LDLIBS = -lz
+LDLIBS = -pthread -lz -lm
 
 DISTDIR = Android-NDK-FileCrypto-AES-CBC
 
